@@ -1,0 +1,609 @@
+@charset "UTF-8";
+
+/* 基本情報　*/
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    width:1000px;
+    height: auto;
+    margin:auto;
+}
+#all {
+    background-color:#fffaf0;
+}
+img {
+    vertical-align: bottom;
+}
+a {
+    text-decoration:none;
+}
+header img {
+    padding-top:50px;
+}
+/* ナビゲーションエリア */
+#nav {
+    width: 1000px;
+    height: 50px;
+    background-color:#fffaf0;
+    position:fixed;
+    top:0;
+}
+#nav ul {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav ul li {
+    list-style-type: none;
+    background-image:url(../images/top_nav.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent:30px;
+}
+#nav a:hover {
+    text-decoration:underline;
+    color:#cd5c5c;
+}
+
+/* テーマ部分　*/
+#orenge {
+    width:1000px;
+    height: 700px;
+    padding-top:50px;
+    background-image:url(../images/bk_orenge.jpg);
+    background-repeat:no-repeat;
+}
+#text1 {
+    text-align:center;
+    line-height: 0.9rem;
+}
+h1 {
+    color:#ff8c00;
+    font-size:200%;
+}
+#theme {
+    width: 830px;
+    margin-left:120px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post:hover {
+    opacity: 0.8;
+}
+#text2 {
+    text-align: center;
+}
+.date {
+    font-size:130%;
+}
+#present {
+    width: 800px;
+    height: 200px;
+    margin:auto;
+    background-image:url(../images/yellow.jpg);
+    background-repeat:no-repeat;
+}
+dl {
+    font-size:135%;
+    overflow:hidden;
+    padding-left:20px;
+}
+dt {
+    width: 20%;
+    float:left;
+    clear:both;
+    padding-left:50px;
+    padding-top:15px;
+}
+dd {
+    float:left;
+    padding-top:15px;
+}
+dt:first-child {
+    background-image:url(../images/mark1.png);
+    background-repeat: no-repeat;
+    background-position-y:10px;
+}
+dt:nth-of-type(2) {
+    background-image:url(../images/mark2.png);
+    background-repeat: no-repeat;
+    background-position-y:10px;
+}
+/* アカウント情報　*/
+#account {
+    text-align: center;
+}
+#account_box {
+    width:650px;
+    height:250px;
+    margin:auto;
+    padding-top:20px;
+    background-image:url(../images/bk_reaf.png);
+    background-repeat:no-repeat;
+    background-position-x:25px;
+}
+#account p {
+    font-size:120%;
+}
+h2 {
+    font-size:200%;
+}
+#account img:hover {
+    opacity:0.8;
+}
+/* 地元PR　*/
+#pr {
+    width: 800px;
+    height: 300px;
+    margin:50px auto 50px auto;
+    padding:30px;
+    background-image:url(../images/bk_blue.png);
+    background-repeat:no-repeat;
+}
+.blue {
+    color:#00bfff;
+    font-size:150%;
+}
+#pr_box {
+    width:800px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pr_box p {
+    font-size:120%;
+}
+#pr_box img:hover {
+    opacity:0.8;
+}
+.red {
+    color:#dc143c;
+    margin-top:30px;
+}
+/* 投稿資格・投稿作品　*/
+#post_box {
+    width: 1000px;
+    height: 500px;
+    display:flex;
+    background-image:url(../images/bk_pink.png);
+    background-repeat:no-repeat;
+}
+#post1 {
+    width: 455px;
+    height: 350px;
+    border-right:2px dashed #808080;
+    margin-top:70px;
+    margin-left:50px;
+}
+#post1 ul {
+    padding-left:20px;
+}
+#post1 ul li {
+    background-image:url(../images/orenge-box.png);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    padding-left:50px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    line-height: 2rem;
+}
+#post2 {
+    width: 455px;
+    height: 300px;
+    margin-top:70px;
+    margin-left:20px;
+    padding-left:0;
+}
+#post2 ul li {
+    background-image:url(../images/pink-box.png);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left:50px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.orenge {
+    color:#ff8c00;
+}
+.pink {
+    color:#ff69b4;
+}
+.orenge,.pink {
+    text-align:center;
+    font-size:200%;
+}
+/* 投稿方法　*/
+#howto {
+    width: 1000px;
+    height: 500px;
+    background-image:url(../images/bk_green.png);
+    background-repeat:no-repeat;
+}
+#howto_box {
+    margin-top:30px;
+    padding:0 40px 0 50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.green {
+    margin:0;
+    padding-top:60px;
+    font-size:200%;
+    color:#3cb371;
+    text-align: center;
+}
+/* おおさき情報　*/
+#about1 {
+    width: 1000px;
+    height: 700px;
+    background-image: url(../images/bk_miyagi.png);
+    background-repeat:no-repeat;
+    background-position:400px 70%;
+}
+#about_text {
+    width: 500px;
+    padding-left:300px;
+    text-align:center;
+    padding-top:30px;
+    font-size:150%;
+}
+#about_text p {
+    margin-top:10px;
+}
+span {
+    color:#ff8c00;
+    font-size:180%;
+}
+h4 {
+    margin-bottom:0;
+    font-size:150%;
+    border-bottom:2px solid #808080;
+}
+#about_box {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#about_box p {
+    padding: 20px;
+    line-height: 2rem;
+    background-color:#ffdead;
+    border-radius: 10px;
+}
+/* 情報バナー　*/
+#about2 {
+    display:flex;
+    justify-content:space-around ;
+}
+#about2 img:hover {
+    opacity:0.6;filter:brightness(110%);
+}
+/* 観光インフォメーション　*/
+#info {
+    background-image: url(../images/leaf.png);
+    background-repeat: no-repeat;
+    background-position:45% 30px;
+}
+#info_text {
+    width: 400px;
+    padding-left:300px;
+    margin-bottom:70px;
+    text-align:center;
+    padding-top:30px;
+    font-size:150%;
+}
+#info_text p {
+    margin-top:10px;
+}
+#info_box {
+    width: 900px;
+    height: 700px;
+    margin:auto;
+    background-color:#fffacd;
+}
+#infoadd {
+    width: 900px;
+    height: 300px;
+    display:flex;
+    justify-content: space-around;
+}
+#info img:hover {
+    opacity:0.6;filter:brightness(110%);
+}
+#add img {
+    padding-top:30px;
+    padding-left:320px;
+}
+#add p,#add1 p,#add2 p {
+    text-align:center;
+}
+/* フッター部分　*/
+footer {
+    width: 1000px;
+    height: 50px;
+    margin-top:50px;
+    text-align: center;
+    background-color:#808080;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+footer p {
+    padding-top:10px;
+    font-size:120%;
+}
+
+
+/* 480px以下の場合 */
+@media screen and (max-width:480px) {
+    body {
+        width:100%;
+        height:auto;
+        margin:0;
+    }
+    img {
+        max-width:100%;
+        margin:auto;
+        height:auto;
+    }
+    #nav {
+        width:100%;
+        height: auto;
+        margin: auto;
+    }
+    #nav ul {
+        width: 80%;
+        margin:5px auto 5px auto;
+        padding-left:10px;
+        flex-wrap: wrap;
+    }
+    #nav ul li {
+        padding:0 20px 0 0;
+    }
+    #orenge {
+        width: 100%;
+        height:auto;
+        padding-bottom:30px;
+        background-image:none;
+        background-color:#ffd1a3;
+    }
+    #text1 {
+        width: 80%;
+        margin:auto;
+    }
+    #text1 p {
+        font-size: 90%;
+        line-height: 1.2rem;
+    }
+    #theme {
+        width: 80%;
+        margin:auto;
+        padding-top:10px;
+        display:block;
+        text-align: center;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    #text2 {
+        width: 80%;
+        margin:auto;
+        line-height: 1.2rem;
+        font-size: 90%;
+    }
+    #present {
+        width:90%;
+        height:auto;
+        margin:auto;
+        padding-top:3px;
+        padding-bottom:3px;
+        background-image:unset;
+        background-color:#fffacd;
+    }
+    dl {
+        width: 90%;
+        height:auto;
+        font-size:90%;
+    }
+    dt {
+        width: 40%;
+        padding-top:5px;
+    }
+    dd {
+        padding-top:5px;
+    }
+    dt:first-child {
+        background-size:contain;
+        background-position-y:2px;
+    }
+    dt:nth-of-type(2) {
+        background-size:contain;
+        background-position-y:2px;
+    }
+    #account {
+        width: 100%;
+        height:auto;
+        margin: auto;
+    }
+    #account_box {
+        width: 90%;
+        margin: auto;
+        height:auto;
+        background-image:none;
+    }
+    #account_box p {
+        font-size:90%;
+    }
+    h2 {
+        font-size:150%;
+    }
+    #account img {
+        width: 60%;
+        margin:auto;
+    }
+    #pr {
+        width: 80%;
+        height:auto;
+    }
+    .blue {
+        font-size: 110%;;
+    }
+    #pr_box {
+        width: 100%;
+        display:block;
+        text-align: center;
+    }
+    #pr_box {
+        font-size:70%;
+    }
+    #pr_box img {
+        width: 40%;
+    }
+    .red {
+        font-size:70%;
+        text-align: center;
+    }
+    #post_box {
+        width: 100%;
+        margin:auto;
+        height:auto;
+        padding-top:55px;
+        padding-bottom:30px;
+        display:block;
+        background-image: none;
+        background-color:#ffeaf4;
+    }
+    #post1,#post2 {
+        width: 80%;
+        height:auto;
+        margin:auto;
+    }
+    #post1 ul li,#post2 ul li {
+        font-size:80%;
+        line-height:1.2rem;
+    }
+    #post1 {
+        padding-bottom:10px;
+        border-right:none;
+        border-bottom:1px solid #808080;
+    }
+    #post1 ul {
+        margin:0 auto 0 5px;
+    }
+    #post1 ul li {
+        padding-top:10px;
+    }
+    #post2 {
+        padding-top:20px;
+    }
+    #post2 ul {
+        margin-top:0;
+        margin-bottom:0;
+        padding-top:10px;
+        padding-left:25px;
+    }
+    .orenge,.pink {
+        font-size:150%;
+    }
+    h3 {
+        margin:0;
+    }
+    .green{
+        font-size:150%;
+    }
+    #howto {
+        width: 100%;
+        height:auto;
+        margin: auto;
+        padding-bottom:30px;
+        background-image: none;
+        background-color:#dbedc4 ;
+    }
+    #howto_box {
+        display:block;
+        text-align: center;
+    }
+    #howto_box p:first-child,#howto_box p:nth-of-type(3),#howto_box p:nth-of-type(5) {
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+    #howto_box p:nth-of-type(2),#howto_box p:nth-of-type(4) {
+        transform: rotate(90deg);
+    }
+    #about1 {
+        width: 100%;
+        margin: auto;
+        background-image:none;
+    }
+    #about_text {
+        width: 70%;
+        margin:auto;
+        padding:50px 0 0 0;
+    }
+    h4 {
+        font-size: 80%;
+    }
+    #about_box {
+        width: 90%;
+        height: auto;
+        margin:auto;
+        display:block;
+    }
+    #about_box p {
+        font-size: 90%;
+    }
+    #about2 {
+        width: 100%;
+        margin:auto;
+        padding-top:50px;
+        height:auto;
+    }
+    #about2 img {
+        width: 90%;
+    }
+    #about2 img:first-child {
+        margin-left:7px;
+    }
+    #info {
+        width: 100%;
+        height: auto;
+        margin:auto;
+    }
+    #info_text {
+        width: 70%;
+        margin:auto;
+        padding:0;
+    }
+    #info_box {
+        width: 90%;
+        height: auto;
+        margin:auto;
+        padding-top:30px;
+        padding-bottom: 20px;
+    }
+    #add {
+        text-align: center;
+    }
+    #add img {
+        width: 35%;
+        padding:0;
+    }
+    #infoadd {
+        width: 80%;
+        margin:auto;
+        height: auto;
+    }
+    #add1 {
+        margin-right:20px;
+        text-align: center;
+    }
+    #add2 {
+        margin-left:20px;
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+    }
+}
